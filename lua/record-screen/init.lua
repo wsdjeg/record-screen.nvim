@@ -5,7 +5,7 @@ local job = require('job')
 local nt = require('notify')
 local jobid
 local command = 'ffmpeg'
-local argvs = { '-f', 'gdigrab', '-i', 'desktop', '-f', 'mp4' }
+local argvs = { '-f', 'gdigrab', '-i', 'desktop', '-pix_fmt', 'yuv420p', '-f', 'mp4' }
 local log = require('record-screen.logger')
 
 local function get_output_file_name()
