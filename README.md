@@ -54,7 +54,7 @@ require('record-screen').setup({
 
 ## Recording Example
 
-https://github.com/user-attachments/assets/b7e2360d-4ec6-4c4b-81b3-0f38299899ce
+https://github.com/user-attachments/assets/9fc2c7c2-e59b-4759-8cfe-991126bd95d3
 
 ## Debug
 
