@@ -17,7 +17,11 @@ using [nvim-plug](https://github.com/wsdjeg/nvim-plug)
 ```lua
 require('plug').add({
     {
-        'D:/wsdjeg/record-screen.nvim',
+        'wsdjeg/record-screen.nvim',
+        depends = {
+            { 'wsdjeg/job.nvim' },
+            { 'wsdjeg/notify.nvim' },
+        },
         config = function()
             vim.keymap.set(
                 'n',
