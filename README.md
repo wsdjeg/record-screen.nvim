@@ -40,7 +40,9 @@ require('plug').add({
 
 ```lua
 require('record-screen').setup({
-    target_dir = 'D:/outputs'
+    cmd = 'ffmpeg',
+    argvs = { '-f', 'gdigrab', '-i', 'desktop', '-f', 'mp4' },
+    target_dir = 'D:/outputs',
 })
 ```
 
