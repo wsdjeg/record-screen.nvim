@@ -8,6 +8,16 @@ local jobid
 function M.start(opt)
 	local cmd = { "ffmpeg", "-f", "gdigrab", "-i", "desktop", "-f", "mp4", target_dir .. "output.mp4" }
 	jobid = job.start(cmd, {
+		on_stderr = function(id, data)
+			for _, v in ipairs(data) do
+				nt.notify(v)
+			end
+		end,
+		on_stdout = function(id, data)
+			for _, v in ipairs(data) do
+				nt.notify(v)
+			end
+		end,
 		on_exit = function(id, data, single)
 			nt.notify(string.format("job exit with: code %s single %s", data, single))
 		end,
