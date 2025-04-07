@@ -1,5 +1,14 @@
 # record-screen.nvim
 
+record-screen.nvim is a Neovim screen recording plugin that uses [ffmpeg](https://www.ffmpeg.org/) command for screen recording.
+
+<!-- vim-markdown-toc GFM -->
+
+* [Installation](#installation)
+* [Setup](#setup)
+* [Self-Promotion](#self-promotion)
+
+<!-- vim-markdown-toc -->
 
 ## Installation
 
@@ -34,3 +43,12 @@ require('record-screen').setup({
     target_dir = 'D:/outputs'
 })
 ```
+
+## Self-Promotion
+
+Like this plugin? Star the repository on
+GitHub.
+
+Love this plugin? Follow [me](https://wsdjeg.net/) on
+[GitHub](https://github.com/wsdjeg) and
+[Twitter](http://twitter.com/wsdtty).
