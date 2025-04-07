@@ -6,6 +6,7 @@ record-screen.nvim is a Neovim screen recording plugin that uses [ffmpeg](https:
 
 * [Installation](#installation)
 * [Setup](#setup)
+* [Recording Example](#recording-example)
 * [Self-Promotion](#self-promotion)
 
 <!-- vim-markdown-toc -->
@@ -49,6 +50,10 @@ require('record-screen').setup({
     target_dir = 'D:/outputs',
 })
 ```
+
+## Recording Example
+
+https://github.com/user-attachments/assets/b7e2360d-4ec6-4c4b-81b3-0f38299899ce
 
 ## Self-Promotion
 
