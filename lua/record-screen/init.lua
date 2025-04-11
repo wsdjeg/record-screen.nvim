@@ -23,9 +23,14 @@ function M.start()
     jobid = job.start(cmd, {
         on_exit = function(id, data, single)
             log.info(string.format('job exit with: code %s single %s', data, single))
-            nt.notify(string.format('job exit with: code %s single %s', data, single))
+            if data == 0 and single == 0 then
+                nt.notify('Recording completed')
+            end
         end,
     })
+    if jobid > 0 then
+        nt.notify('Start recording.')
+    end
 end
 
 function M.stop()
