@@ -11,5 +11,17 @@ function M.info(msg)
         log.info(msg)
     end
 end
+function M.debug(msg)
+    if not log then
+        local ok, l = pcall(require, 'logger')
+        if ok then
+            log = l.derive('record-screen.nvim')
+            log.debug(msg)
+        end
+    else
+        log.debug(msg)
+    end
+end
+
 
 return M
