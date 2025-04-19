@@ -21,6 +21,11 @@ function M.start()
     table.insert(cmd, target_dir .. get_output_file_name() .. '.mp4')
     log.info('cmd is: ' .. table.concat(cmd, ' '))
     jobid = job.start(cmd, {
+        on_stderr = function(id, data)
+            for _, v in ipairs(data) do
+                log.debug(v)
+            end
+        end,
         on_exit = function(id, data, single)
             log.info(string.format('job exit with: code %s single %s', data, single))
             if data == 0 and single == 0 then
