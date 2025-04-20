@@ -23,7 +23,7 @@ function M.start()
     jobid = job.start(cmd, {
         on_stderr = function(id, data)
             for _, v in ipairs(data) do
-                log.debug(v)
+                log.error(v)
             end
         end,
         on_exit = function(id, data, single)

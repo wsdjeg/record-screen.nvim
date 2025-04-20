@@ -22,6 +22,17 @@ function M.debug(msg)
         log.debug(msg)
     end
 end
+function M.error(msg)
+    if not log then
+        local ok, l = pcall(require, 'logger')
+        if ok then
+            log = l.derive('record-screen.nvim')
+            log.error(msg)
+        end
+    else
+        log.error(msg)
+    end
+end
 
 
 return M
