@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/wsdjeg/record-screen.nvim/compare/v1.1.0...v1.1.1) (2025-04-20)
+
+
+### Bug Fixes
+
+* log cmd ([d3fff3e](https://github.com/wsdjeg/record-screen.nvim/commit/d3fff3ea9acf480935f29d776cb2a7d74df3a256))
+
 ## [1.1.0](https://github.com/wsdjeg/record-screen.nvim/compare/v1.0.0...v1.1.0) (2025-04-13)
 
 
