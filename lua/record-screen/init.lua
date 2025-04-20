@@ -26,10 +26,17 @@ function M.start()
                 log.error(v)
             end
         end,
+        on_stdout = function(id, data)
+            for _, v in ipairs(data) do
+                log.info(v)
+            end
+        end,
         on_exit = function(id, data, single)
             log.info(string.format('job exit with: code %s single %s', data, single))
             if data == 0 and single == 0 then
                 nt.notify('Recording completed')
+            else
+                nt.notify('Failed to record')
             end
         end,
     })
