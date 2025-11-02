@@ -3,7 +3,7 @@ local M = {}
 local target_dir = 'C:/Users/wsdjeg/Desktop/'
 local job = require('job')
 local nt = require('notify')
-local jobid
+local jobid = -1
 local command = 'ffmpeg'
 local argvs = { '-f', 'gdigrab', '-i', 'desktop', '-pix_fmt', 'yuv420p', '-f', 'mp4' }
 local log = require('record-screen.logger')
@@ -14,6 +14,9 @@ local function get_output_file_name()
 end
 
 function M.start()
+    if jobid > 0 then
+        return nt.notify('previous recording has not finished!')
+    end
     local cmd = { command }
     for _, v in ipairs(argvs) do
         table.insert(cmd, v)
@@ -38,6 +41,7 @@ function M.start()
             else
                 nt.notify('Failed to record')
             end
+            jobid = -1
         end,
     })
     if jobid > 0 then
