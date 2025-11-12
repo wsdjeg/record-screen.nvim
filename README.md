@@ -2,13 +2,18 @@
 
 record-screen.nvim is a Neovim screen recording plugin that uses [ffmpeg](https://www.ffmpeg.org/) command for screen recording.
 
+[![GitHub License](https://img.shields.io/github/license/wsdjeg/record-screen.nvim)](LICENSE)
+[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/wsdjeg/record-screen.nvim)](https://github.com/wsdjeg/record-screen.nvim/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/wsdjeg/record-screen.nvim)](https://github.com/wsdjeg/record-screen.nvim/commits/master/)
+[![GitHub Release](https://img.shields.io/github/v/release/wsdjeg/record-screen.nvim)](https://github.com/wsdjeg/record-screen.nvim/releases)
+
 <!-- vim-markdown-toc GFM -->
 
-* [Installation](#installation)
-* [Setup](#setup)
-* [Recording Example](#recording-example)
-* [Debug](#debug)
-* [Self-Promotion](#self-promotion)
+- [Installation](#installation)
+- [Setup](#setup)
+- [Recording Example](#recording-example)
+- [Debug](#debug)
+- [Self-Promotion](#self-promotion)
 
 <!-- vim-markdown-toc -->
 
@@ -112,5 +117,4 @@ Like this plugin? Star the repository on
 GitHub.
 
 Love this plugin? Follow [me](https://wsdjeg.net/) on
-[GitHub](https://github.com/wsdjeg) and
-[Twitter](http://twitter.com/wsdtty).
+[GitHub](https://github.com/wsdjeg).
