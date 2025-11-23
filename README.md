@@ -6,6 +6,7 @@ record-screen.nvim is a Neovim screen recording plugin that uses [ffmpeg](https:
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/wsdjeg/record-screen.nvim)](https://github.com/wsdjeg/record-screen.nvim/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/wsdjeg/record-screen.nvim)](https://github.com/wsdjeg/record-screen.nvim/commits/master/)
 [![GitHub Release](https://img.shields.io/github/v/release/wsdjeg/record-screen.nvim)](https://github.com/wsdjeg/record-screen.nvim/releases)
+[![luarocks](https://img.shields.io/luarocks/v/wsdjeg/record-screen.nvim)](https://luarocks.org/modules/wsdjeg/record-screen.nvim)
 
 <!-- vim-markdown-toc GFM -->
 
@@ -19,7 +20,7 @@ record-screen.nvim is a Neovim screen recording plugin that uses [ffmpeg](https:
 
 ## Installation
 
-using [nvim-plug](https://github.com/wsdjeg/nvim-plug)
+Using [nvim-plug](https://github.com/wsdjeg/nvim-plug)
 
 ```lua
 require('plug').add({
@@ -45,6 +46,12 @@ require('plug').add({
         end,
     },
 })
+```
+
+Using [luarocks](https://luarocks.org/)
+
+```
+luarocks install record-screen.nvim
 ```
 
 ## Setup
