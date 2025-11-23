@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/wsdjeg/record-screen.nvim/compare/v1.1.1...v1.2.0) (2025-11-23)
+
+
+### Features
+
+* add luarocks support ([8148855](https://github.com/wsdjeg/record-screen.nvim/commit/8148855d10f1c61a16d41463b512fe08f534f785))
+
+
+### Bug Fixes
+
+* update dependencies ([66b8526](https://github.com/wsdjeg/record-screen.nvim/commit/66b8526957c7981ddb244dd53631307f83383c3d))
+
 ## [1.1.1](https://github.com/wsdjeg/record-screen.nvim/compare/v1.1.0...v1.1.1) (2025-11-02)
 
 
