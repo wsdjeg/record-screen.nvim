@@ -58,7 +58,7 @@ luarocks install record-screen.nvim
 
 ```lua
 require('record-screen').setup({
-    cmd = 'ffmpeg',
+    command = 'ffmpeg',
     argvs = { '-f', 'gdigrab', '-i', 'desktop', '-f', 'mp4' },
     target_dir = 'D:/outputs',
 })
