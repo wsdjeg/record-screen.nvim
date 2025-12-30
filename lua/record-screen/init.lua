@@ -7,6 +7,7 @@ local jobid = -1
 local command = 'ffmpeg'
 local argvs = { '-f', 'gdigrab', '-i', 'desktop', '-pix_fmt', 'yuv420p', '-f', 'mp4' }
 local log = require('record-screen.logger')
+local env
 
 local function get_output_file_name()
     local t = os.date('*t')
@@ -43,6 +44,7 @@ function M.start()
             end
             jobid = -1
         end,
+        env = env,
     })
     if jobid > 0 then
         nt.notify('Start recording.')
@@ -59,6 +61,7 @@ function M.setup(opt)
     target_dir = opt.target_dir or target_dir
     command = opt.command or command
     argvs = opt.argvs or argvs
+    env = opt.env
 end
 
 return M
