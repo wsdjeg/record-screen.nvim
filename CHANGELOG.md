@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/wsdjeg/record-screen.nvim/compare/v1.2.0...v1.3.0) (2025-12-31)
+
+
+### Features
+
+* support auto create target_dir ([845288b](https://github.com/wsdjeg/record-screen.nvim/commit/845288b762c32da5f610e7e1841879b17ba698be))
+* support job env ([34871d3](https://github.com/wsdjeg/record-screen.nvim/commit/34871d380dcd50022c1d6bfd26265eb056abff1d))
+
+
+### Bug Fixes
+
+* change default target_dir and update doc ([c7938bf](https://github.com/wsdjeg/record-screen.nvim/commit/c7938bf433b58ca34bc0db2c68b7c98d084c070e))
+* fix creaet_dir logic ([abe750d](https://github.com/wsdjeg/record-screen.nvim/commit/abe750d023c4e9388e304d4850f115f751980d55))
+
 ## [1.2.0](https://github.com/wsdjeg/record-screen.nvim/compare/v1.1.1...v1.2.0) (2025-11-23)
 
 
