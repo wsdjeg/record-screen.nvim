@@ -60,7 +60,14 @@ luarocks install record-screen.nvim
 require('record-screen').setup({
     command = 'ffmpeg',
     argvs = { '-f', 'gdigrab', '-i', 'desktop', '-f', 'mp4' },
+    -- defaul target_dir = vim.fn.stdpath('cache') .. '/record-screen.nvim'
     target_dir = 'D:/outputs',
+    -- default is true
+    auto_create_target_dir = true,
+    -- default is nil
+    env = {
+        YOUR_CUSTOM_ENV = 'hello',
+    },
 })
 ```
 

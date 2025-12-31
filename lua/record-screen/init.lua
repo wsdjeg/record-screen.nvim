@@ -1,6 +1,6 @@
 local M = {}
 
-local target_dir = 'C:/Users/wsdjeg/Desktop/'
+local target_dir = vim.fn.stdpath('cache') .. '/record-screen.nvim'
 local job = require('job')
 local nt = require('notify')
 local jobid = -1
