@@ -29,12 +29,11 @@ function M.start()
     local dir = vim.fs.normalize(target_dir)
     if vim.fn.isdirectory(dir) == 0 then
         if auto_create_target_dir then
-        else
             vim.api.nvim_echo({
                 -- yes: create and start recording
                 -- other: cancel recording screen
                 {
-                    'target_dir:"' .. dir .. '" does not exist, create target_dir?  Yes/No/Cancel',
+                    'target_dir:"' .. dir .. '" does not exist, create target_dir?  Yes/No',
                     'WarningMsg',
                 },
             }, false, {})
@@ -54,6 +53,14 @@ function M.start()
                 }, false, {})
                 return
             end
+        else
+            vim.api.nvim_echo({
+                {
+                    'target_dir:"' .. dir .. '" does not exist.',
+                    'ModeMsg',
+                },
+            }, false, {})
+            return
         end
     end
     local cmd = { command }
