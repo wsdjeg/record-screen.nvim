@@ -97,7 +97,9 @@ function M.start()
 end
 
 function M.stop()
-    job.send(jobid, 'q')
+    if jobid > 0 then
+        job.send(jobid, 'q')
+    end
 end
 
 function M.setup(opt)
